@@ -5,12 +5,21 @@ namespace App\Http\Controllers;
 use App\Models\Contract;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use App\Models\User;
 
 class ContractController extends Controller
 {
     /**
      * Display a listing of the contracts.
      */
+
+    public function __construct()
+    {
+        // $this->middleware('permission:view contracts')->only('index');
+        // $this->middleware('permission:create contracts')->only('create', 'store');
+        // $this->middleware('permission:edit contracts')->only('edit', 'update');
+        // $this->middleware('permission:delete contracts')->only('destroy');
+    }
 
     
     public function index()

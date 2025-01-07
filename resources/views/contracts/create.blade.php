@@ -15,7 +15,10 @@
         </div>
         <div class="mb-3">
             <label for="currency" class="form-label">Currency</label>
-            <input type="text" name="currency" id="currency" class="form-control" required>
+            <select name="currency" id="currency" class="form-select">
+                <option value="AMD">AMD</option>
+                <option value="USD">USD</option>
+            </select>
         </div>
         <div class="mb-3">
             <label for="category" class="form-label">Category</label>

@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Models\User;
 // use App\Http\Controllers\ContractController;
 
 /*
@@ -17,6 +18,11 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return redirect()->route('contracts.index');
 });
+
+// Route::get('/check-role', function () {
+//     $user = User::find(1); 
+//     dd($user->roles);
+// });
 
 
 Route::resource('contracts', ContractController::class);
